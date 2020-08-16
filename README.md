@@ -1,7 +1,7 @@
-[![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger) [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://enesdemirag.mit-license.org)
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://enesdemirag.mit-license.org)
 
 # Simple Point Cloud Filtering Package
-<img align="right" src="https://web.itu.edu.tr/demirag16/img/simpcl_logo.png" height="152" width="360">
+<img align="right" src="https://github.com/enesdemirag/simpcl/raw/internship/images/simpcl.png" height="165" width="360">
 
 This package can work properly with all devices which produce point cloud data. (Stereo Cameras, RGB-D Cameras, LiDARs etc.) *[Point Cloud Library (PCL)](https://github.com/PointCloudLibrary/pcl)* and *[OctoMap](https://github.com/OctoMap/octomap_mapping)* used on ROS platform.
 
@@ -30,7 +30,7 @@ This package can work properly with all devices which produce point cloud data. 
 
 * Get this repository as a catkin workspace
     ```
-    $ git clone -b simpcl https://github.com/enesdemirag/point-cloud-filters.git catkin_ws
+    $ git clone https://github.com/enesdemirag/simpcl.git catkin_ws
     ```
 
 * Build package
@@ -39,7 +39,14 @@ This package can work properly with all devices which produce point cloud data. 
     $ catkin build
     ```
 
-* Launch files are under the *[src/simpcl/launch](https://github.com/enesdemirag/zed_filtering/tree/master/src/filters/launch)* directory. Parameters can easily be changed without the need to recompile.
+* Or move *[src/simpcl/](https://github.com/enesdemirag/simpcl/tree/simpcl/src/simpcl)* package under your workspace.
+
+* Source catkin workspace
+    ```
+    $ source devel/setup.bash
+    ```
+
+* Launch files are under the *[src/simpcl/launch](https://github.com/enesdemirag/simpcl/tree/simpcl/src/simpcl/launch)* directory. Parameters can easily be changed without the need to recompile.
 
 ## Usage
 
@@ -47,10 +54,20 @@ This package can work properly with all devices which produce point cloud data. 
 $ roslaunch simpcl mapping.launch
 ```
 
+![alt text](https://github.com/enesdemirag/simpcl/raw/internship/images/icp.gif "Mapping with ICP")
+
 ## Author
 
-* **Enes Demirağ** <demirag16@itu.edu.tr> - *[LinkedIn](https://www.linkedin.com/in/enesdemirag/)*
+* **Enes Demirağ** <ensdmrg@gmail.com> - *[LinkedIn](https://www.linkedin.com/in/enesdemirag/)* *[Website](https://enesdemirag.github.io)*
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Interested in contributing to my repo? Fork, and open a pull request. I'll try to merge as soon as possible. If you found any mistake or you have advice, feel free to open an issue.
+
+## More
+
+You can reach work in progress and all filters including unstable ones from [here](https://github.com/enesdemirag/simpcl/tree/internship).
